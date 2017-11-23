@@ -11,6 +11,8 @@ public class TeambarometerAppApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
+		//Changes for test commit for circleci
 	}
 
 }
