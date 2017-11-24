@@ -44,11 +44,14 @@ jobs:
   deploy:
     docker:
         - image: circleci/openjdk:8-jdk
-    working_directory: /
+    working_directory: ~/repo
     steps:
+      - checkout
+
+      - run: sudo apt-get install awscli
       - run:
           name: Deploy to S3 if tests pass and branch is Master
-          command: sudo apt-get install awscli && aws s3 sync ./teambarometer-app s3://hakarlbucket.s3-website.us-east-2.amazonaws.com --delete
+          command: aws s3 sync ~/repo s3://hakarlbucket.s3-website.us-east-2.amazonaws.com --delete
 
 workflows:
   version: 2
