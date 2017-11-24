@@ -4,5 +4,5 @@ branch-defaults:
 global:
   application_name: teambarometer
   default_ec2_keyname: teambarometer
-  default_platform: 64bit Amazon Linux 2015.03 v1.4.3 running Ruby 2.2 (Puma)
+  default_platform: 64bit Amazon Linux 2017.09 v2.6.0 running Java 8
   default_region: us-east-2
