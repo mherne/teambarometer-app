@@ -54,7 +54,7 @@ jobs:
       - run: eb status
       - run:
           name: Deploy to eb
-          command: eb deploy --profile default
+            command: eb deploy teambarometer-app
 
 workflows:
   version: 2
