@@ -52,9 +52,7 @@ jobs:
       - run: sudo apt-get install python-pip
       - run: sudo pip install awsebcli
       - run: eb status
-      - run:
-          name: Deploy to eb
-            command: eb deploy
+      - run: eb deploy
 
 workflows:
   version: 2
