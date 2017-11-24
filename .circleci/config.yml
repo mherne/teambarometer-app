@@ -53,16 +53,23 @@ jobs:
           name: Deploy to S3 if tests pass and branch is Master
           command: aws s3 sync ~/repo s3://hakarlbucket --delete --region us-east-2
 
+  deployment:
+    production:
+      branch: develop
+      commands:
+        - eb deploy
+
+dependencies:
+  pre:
+    - sudo pip install awsebcli
+
 workflows:
   version: 2
   build_and_test:
     jobs:
       - build
-      - deploy:
+      - deployment:
           requires:
             - build
-          filters:
-            branches:
-              only: develop
 
 

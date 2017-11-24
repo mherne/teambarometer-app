@@ -1,0 +1,10 @@
+branch-defaults:
+  master:
+    environment: e-amjgppuxum
+global:
+  application_name: teambarometer-app
+  default_ec2_keyname: ec2-key-pair-name
+  default_platform: 64bit Amazon Linux 2015.03 v1.4.3 running Ruby 2.2 (Puma)
+  default_region: us-east-2
+  profile: eb-cli
+  sc: git
