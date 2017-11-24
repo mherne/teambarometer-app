@@ -53,7 +53,7 @@ jobs:
       - run: sudo pip install awsebcli
       - run: gradle bootJar
       - run: eb status
-      - run: eb deploy
+      - run: eb deploy --staged
 
 workflows:
   version: 2
