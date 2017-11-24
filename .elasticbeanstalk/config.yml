@@ -1,5 +1,5 @@
 branch-defaults:
-  master:
+  develop:
     environment: e-amjgppuxum
 global:
   application_name: teambarometer-app
