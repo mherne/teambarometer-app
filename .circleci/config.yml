@@ -41,18 +41,19 @@ jobs:
       # run tests!
       - run: gradle test
 
+  deployment:
+    staging:
+      branch: develop
+        codedeploy:
+          teambarometer-app:
+            deployment_group: hakarl-w7tufay
 workflows:
   version: 2
   build_and_test:
     jobs:
       - build
+      - deployment
 
-deployment:
-  staging:
-    branch: develop
-    codedeploy:
-      teambarometer-app:
-        deployment_group: hakarl-w7tufay
 
 
 
