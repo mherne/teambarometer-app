@@ -51,6 +51,7 @@ jobs:
       - run: sudo apt-get install awscli
       - run: sudo apt-get install python-pip
       - run: sudo pip install awsebcli
+      - run: gradle bootJar
       - run: eb status
       - run: eb deploy
 
