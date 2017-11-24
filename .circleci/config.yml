@@ -53,7 +53,7 @@ jobs:
       - run: sudo pip install awsebcli
       - run:
           name: Deploy to S3 if tests pass and branch is Master
-          command: eb deploy
+          command: eb deploy --profile default
 
 workflows:
   version: 2
