@@ -44,9 +44,9 @@ jobs:
   deployment:
     staging:
       branch: develop
-        codedeploy:
-          teambarometer-app:
-            deployment_group: hakarl-w7tufay
+      codedeploy:
+        teambarometer-app:
+          deployment_group: hakarl-w7tufay
 workflows:
   version: 2
   build_and_test:
