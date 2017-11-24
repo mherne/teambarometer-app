@@ -51,9 +51,9 @@ jobs:
       - run: sudo apt-get install awscli
       - run: sudo apt-get install python-pip
       - run: sudo pip install awsebcli
+      - run: eb status
       - run:
           name: Deploy to eb
-          command: eb status
           command: eb deploy --profile default
 
 workflows:
