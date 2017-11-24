@@ -1,6 +1,6 @@
 branch-defaults:
   develop:
-    environment: e-amjgppuxum
+    environment: Default-Environment
 global:
   application_name: Default-Environment
   default_ec2_keyname: Default-Environment
