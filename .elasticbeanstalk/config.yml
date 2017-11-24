@@ -2,8 +2,7 @@ branch-defaults:
   develop:
     environment: e-amjgppuxum
 global:
-  application_name: teambarometer-app
-  default_ec2_keyname: teambarometer-app
+  application_name: Default-Environment
+  default_ec2_keyname: Default-Environment
   default_platform: 64bit Amazon Linux 2015.03 v1.4.3 running Ruby 2.2 (Puma)
   default_region: us-east-2
-  sc: git
