@@ -48,7 +48,7 @@ jobs:
     steps:
       - run:
           name: Deploy to S3 if tests pass and branch is Master
-          command: sudo apt-get install awscli && aws s3 sync /teambarometer-app s3://hakarlbucket.s3-website.us-east-2.amazonaws.com --delete
+          command: sudo apt-get install awscli && aws s3 sync ./teambarometer-app s3://hakarlbucket.s3-website.us-east-2.amazonaws.com --delete
 
 workflows:
   version: 2
