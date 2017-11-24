@@ -48,7 +48,7 @@ jobs:
     steps:
       - checkout
 
-      - run: sudo apt-get install awscli
+      - run: sudo pip install awsebcli
       - run:
           name: Deploy to S3 if tests pass and branch is Master
           command: eb deploy
