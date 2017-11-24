@@ -6,4 +6,5 @@ global:
   default_ec2_keyname: teambarometer
   default_platform: 64bit Amazon Linux 2017.09 v2.6.0 running Java 8
   default_region: us-east-2
-  deploy: ~/repo/build/libs/application.jar
+  deploy:
+    artifact: ~/repo/build/libs/application.jar
